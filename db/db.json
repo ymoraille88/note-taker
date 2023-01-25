@@ -1,6 +1,27 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title": "Words From God",
+        "text": "I'm growing tremendously"
+        // id: ""
+    },
+    {
+        "title": "TSA Info",
+        "text": "Legit"
+        // id: 
+    },
+    {
+        "title": "Faith",
+        "text": "Gotta Have Faith"
+        // id: 
+    },
+    {
+        "title": "Reminder",
+        "text": "Gym at 5 am"
+        // id: 
+    },
+    {
+        "title": "Grocery",
+        "text": "Need Olive Oil"
+        // id:
     }
 ]
