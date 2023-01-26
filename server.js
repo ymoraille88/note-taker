@@ -1,15 +1,16 @@
 const express = require('express');
 const path = require('path');
+const uuid = require('./helpers/uuid')
 
-const api = require('./routes/index.js');
-const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
+
+const { readFromFile, readAndAppend } = require('./helpers/fsUtils');
 const PORT = process.env.port || 3001;
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/api', api);
 app.use(express.static('public'));
+
 
 
 app.get('/', (req, res) =>
@@ -37,6 +38,10 @@ app.post('/api/notes', (req, res) => {
   } else {
     res.error('');
   }
+});
+app.get('/api/notes', async (req, res) => {
+  const notes = await readFromFile('./db/notes.json', 'utf8')
+  res.json(JSON.parse(notes))
 });
 
 app.listen(PORT, () =>
