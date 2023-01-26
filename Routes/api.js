@@ -17,10 +17,10 @@ router.post('/', (req, res) => {
         note_id: uuid(),
       };
   
-      readAndAppend(newNOTE, './db/router.json');
-      res.json(`Tip added successfully 🚀`);
+      readAndAppend(newNote, './db/router.json');
+      res.json(` 🚀`);
     } else {
-      res.error('Error in adding tip');
+      res.error('');
     }
   });
   
