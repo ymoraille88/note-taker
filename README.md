@@ -28,10 +28,10 @@ This app uses Technologies such as Inquirer, Express.
 
 ## Link
 
-[Website]()
+[Website](https://stark-scrubland-78544.herokuapp.com/)
 
 ## Visuals
 
-[Homepage]()
+[Homepage]( ../note-taker/assets/images/Screenshot%202023-01-31%20at%208.34.40%20AM%20(2).png)
 
 
